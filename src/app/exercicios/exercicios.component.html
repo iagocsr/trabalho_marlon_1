@@ -1,0 +1,36 @@
+<article>
+    <h1>1.Interpolação</h1>
+    <p>Essa pagina diz: {{ texto }}</p>
+</article>
+
+<article>
+    <h1>2.Interpolação</h1>
+    <a href="{{ Google }}">Ir para o Google</a>
+
+</article>
+
+<article>
+    <h1>3.Event Binding Mudar texto </h1>
+    <p>Clique no Texto abaixo</p>
+    <p [style.background-color]="corDoBackground" [style.color]="corDoTexto" (click)="setMudarBackground()">Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Nostrum
+        nobis impedit culpa sunt accusamus aperiam, nihil qui inventore illum itaque soluta debitis in distinctio, vero
+        tenetur officiis et ipsum reiciendis!</p>
+</article>
+
+<article>
+    <h1>4.Event Binding Select</h1>
+    <select #select (change)="setTexto(select.value)">
+        <option value="">Selecione os Textos</option>
+        <option value="Esse é o Primeiro Texto">Primeiro Texto</option>
+        <option value="Esse é o Segundo Texto">Segundo Texto</option>
+        <option value="Esse é o Terceiro Texto">Terceiro Texto</option>
+        <option value="Esse é o Quarto Texto">Quarto Texto</option>
+        <option value="">Limpar Textos</option>
+
+
+    </select>
+    
+    <p [style.Texto]="Texto">{{ Texto }}</p>
+
+</article>
